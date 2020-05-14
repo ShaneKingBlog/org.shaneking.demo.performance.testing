@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.shaneking.spring</groupId>
+    <artifactId>org.shaneking.spring</artifactId>
+    <version>0.2.4</version>
+    <relativePath>../org.shaneking.spring</relativePath>
+  </parent>
+
+  <artifactId>org.shaneking.spring.demo.performance.testing</artifactId>
+  <version>${project.parent.version}</version>
+  <packaging>jar</packaging>
+
+  <name>Performance Testing Demo for ShaneKing</name>
+  <description>Performance Testing Demo for ShaneKing</description>
+  <url>https://github.com/ShaneKing/org.shaneking.spring.currentlimiter</url>
+  <inceptionYear>2011-2020</inceptionYear>
+
+  <organization>
+    <name>Azolla</name>
+    <url>https://github.com/Azolla</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>MIT</name>
+      <url>https://opensource.org/licenses/Apache-2.0</url>
+      <distribution>repo</distribution>
+      <comments>ShaneKing is released under Apache-2.0 License.</comments>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>ShaneKing</id>
+      <name>ShaneKing</name>
+      <email>github@azolla.org</email>
+      <url>https://github.com/ShaneKing</url>
+      <organization>Azolla</organization>
+      <organizationUrl>https://github.com/Azolla</organizationUrl>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+8</timezone>
+      <properties>
+        <dept>No</dept>
+      </properties>
+    </developer>
+  </developers>
+  <contributors>
+    <contributor>
+      <name>Maogu</name>
+      <email>git@azolla.org</email>
+      <url>https://github.com/Maogu</url>
+      <organization>Azolla</organization>
+      <organizationUrl>https://github.com/Azolla</organizationUrl>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+8</timezone>
+      <properties>
+        <dept>No</dept>
+      </properties>
+    </contributor>
+  </contributors>
+
+  <scm>
+    <connection>scm:git:git@github.com:ShaneKing/org.shaneking.spring.demo.performance.testing.git</connection>
+    <developerConnection>scm:git:git@github.com:ShaneKing/org.shaneking.spring.demo.performance.testing.git</developerConnection>
+    <url>git@github.com:ShaneKing/org.shaneking.spring.demo.performance.testing.git</url>
+  </scm>
+  <issueManagement>
+    <system>Github</system>
+    <url>https://github.com/ShaneKing/org.shaneking.spring.demo.performance.testing/issues</url>
+  </issueManagement>
+  <ciManagement>
+    <system>Travis-CI</system>
+    <url>https://travis-ci.org/ShaneKing/org.shaneking.spring.demo.performance.testing</url>
+  </ciManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-configuration-processor</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-aop</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.junit.vintage</groupId>
+          <artifactId>junit-vintage-engine</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.shaneking</groupId>
+      <artifactId>org.shaneking.skava</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.shaneking.spring</groupId>
+      <artifactId>org.shaneking.spring.test</artifactId>
+      <version>${project.parent.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
