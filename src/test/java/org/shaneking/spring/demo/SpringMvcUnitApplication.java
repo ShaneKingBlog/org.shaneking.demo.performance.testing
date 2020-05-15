@@ -1,4 +1,4 @@
-//the Application package must parent of Spring annotations
+//!important:the Application package must parent of Spring annotations if no AutoConfiguration in src
 package org.shaneking.spring.demo;
 
 import org.springframework.boot.SpringApplication;
@@ -11,8 +11,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @EnableConfigurationProperties
 @EnableAspectJAutoProxy
 @SpringBootApplication
-public class SpringUnitApplication {
+public class SpringMvcUnitApplication {
   public static void main(String[] args) {
-    SpringApplication.run(SpringUnitApplication.class, args);
+    SpringApplication.run(SpringMvcUnitApplication.class, args);
   }
 }

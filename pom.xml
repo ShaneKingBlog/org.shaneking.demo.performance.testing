@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.shaneking.spring</groupId>
     <artifactId>org.shaneking.spring</artifactId>
-    <version>0.2.4</version>
+    <version>0.2.5</version>
     <relativePath>../org.shaneking.spring</relativePath>
   </parent>
 
@@ -82,15 +82,6 @@
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-configuration-processor</artifactId>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-autoconfigure</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-aop</artifactId>
     </dependency>
     <dependency>
@@ -107,10 +98,6 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
     </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -133,6 +120,13 @@
   </dependencies>
   <build>
     <plugins>
+      <!-- mvn clean package spring-boot:repackage -DskipTests -->
+      <!-- jar -uf xxx.jar BOOT-INF/classes/application.yml -->
+      <!-- nohup java -jar -Dfile.encoding=UTF-8 xxx.jar 1>>nohup.log 2>>nohuperr.log & -->
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
