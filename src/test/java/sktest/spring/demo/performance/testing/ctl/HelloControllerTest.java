@@ -16,7 +16,7 @@ public class HelloControllerTest extends SpringMvcUnit {
   }
 
   @Test
-  public void map() throws Exception {
-    performJJ("/hello/map");
+  public void mapParallelStream() throws Exception {
+    performJJ("/hello/mapParallelStream");
   }
 }
