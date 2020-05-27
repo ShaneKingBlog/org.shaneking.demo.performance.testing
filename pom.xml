@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.shaneking.spring</groupId>
     <artifactId>org.shaneking.spring</artifactId>
-    <version>0.2.5</version>
+    <version>0.3.0</version>
     <relativePath>../org.shaneking.spring</relativePath>
   </parent>
 
@@ -25,7 +25,7 @@
   </organization>
   <licenses>
     <license>
-      <name>MIT</name>
+      <name>Apache-2.0</name>
       <url>https://opensource.org/licenses/Apache-2.0</url>
       <distribution>repo</distribution>
       <comments>ShaneKing is released under Apache-2.0 License.</comments>
@@ -110,11 +110,12 @@
     <dependency>
       <groupId>org.shaneking</groupId>
       <artifactId>org.shaneking.skava</artifactId>
+      <version>${org.shaneking_version}</version>
     </dependency>
     <dependency>
       <groupId>org.shaneking.spring</groupId>
       <artifactId>org.shaneking.spring.test</artifactId>
-      <version>${project.parent.version}</version>
+      <version>${org.shaneking.spring_version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
