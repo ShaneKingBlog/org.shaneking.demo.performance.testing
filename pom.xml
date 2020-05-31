@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.shaneking.spring</groupId>
     <artifactId>org.shaneking.spring</artifactId>
-    <version>0.3.0</version>
+    <version>0.3.1</version>
     <relativePath>../org.shaneking.spring</relativePath>
   </parent>
 
@@ -115,7 +115,7 @@
     <dependency>
       <groupId>org.shaneking.spring</groupId>
       <artifactId>org.shaneking.spring.test</artifactId>
-      <version>${org.shaneking.spring_version}</version>
+      <version>${project.parent.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
