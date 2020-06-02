@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.shaneking.spring</groupId>
     <artifactId>org.shaneking.spring</artifactId>
-    <version>0.3.2</version>
+    <version>0.3.3</version>
     <relativePath>../org.shaneking.spring</relativePath>
   </parent>
 
