@@ -1,14 +1,17 @@
-package sktest.spring.demo.performance.testing.ctl;
+package sktest.demo.performance.testing.ctl;
 
-import org.junit.Test;
-import sktest.spring.demo.SpringMvcUnit;
+import org.junit.jupiter.api.Test;
+import org.shaneking.demo.DemoApplication;
+import org.shaneking.leon.test.SKSpringMvcUnit;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-public class HelloControllerTest extends SpringMvcUnit {
+@SpringBootTest(classes = DemoApplication.class)///not need this line if package is org.shaneking.demo...
+public class HelloControllerTest extends SKSpringMvcUnit {
 
   @Test
   public void string() throws Exception {
