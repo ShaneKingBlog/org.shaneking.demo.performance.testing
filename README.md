@@ -1,2 +1,2 @@
-# org.shaneking.spring.demo.performance.testing
+# org.shaneking.demo.performance.testing
 Performance Testing Demo for ShaneKing
