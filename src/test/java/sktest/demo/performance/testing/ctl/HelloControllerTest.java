@@ -1,7 +1,7 @@
 package sktest.demo.performance.testing.ctl;
 
 import org.junit.jupiter.api.Test;
-import org.shaneking.demo.DemoApplication;
+import org.shaneking.demo.DemoPerformanceTestingApplication;
 import org.shaneking.leon.test.SKSpringMvcUnit;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -10,7 +10,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringBootTest(classes = DemoApplication.class)///not need this line if package is org.shaneking.demo...
+@SpringBootTest(classes = DemoPerformanceTestingApplication.class)///not need this line if package is org.shaneking.demo...
 public class HelloControllerTest extends SKSpringMvcUnit {
 
   @Test
